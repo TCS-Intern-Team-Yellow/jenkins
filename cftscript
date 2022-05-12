@@ -1,16 +1,30 @@
 {
     "AWSTemplateFormatVersion": "2010-09-09",
-    "Resources": {
-        "S3Bucket": {
-            "Type": "AWS::S3::Bucket"
+    "Metadata": {
+        "AWS::CloudFormation::Designer": {
+            "9c7a245f-daa8-4093-93df-d93b19f73330": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 234.99999995529652,
+                    "y": 141
+                },
+                "z": 0,
+                "embeds": []
+            }
         }
     },
-    "Outputs": {
-        "BucketName": {
-            "Value": {
-                "Ref": "S3Bucket"
-            },
-            "Description": "Name of the sample Amazon S3 bucket."
+    "Resources": {
+        "SampleBucket": {
+            "Type": "AWS::S3::Bucket",
+            "Properties": {},
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "9c7a245f-daa8-4093-93df-d93b19f73330"
+                }
+            }
         }
     }
 }
